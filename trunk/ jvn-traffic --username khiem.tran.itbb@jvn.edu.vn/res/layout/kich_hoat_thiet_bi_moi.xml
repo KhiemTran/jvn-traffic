@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/tittle_bar">
+        <Button 
+        	android:text="" 
+        	android:id="@+id/button1" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/btn_back">
+        </Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Số điện thoại thiết bị" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/editText1" 
+        	android:inputType="number"
+        	android:layout_width="match_parent">
+        </EditText>
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Password hiện tại" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/editText1" 
+        	android:inputType="textPassword"
+        	android:layout_width="match_parent">
+        </EditText>
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Tên thiết bị" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/editText1" 
+        	android:inputType="text"
+        	android:layout_width="match_parent">
+        </EditText>
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Email" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:id="@+id/editText1" 
+        	android:inputType="textEmailAddress" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="wrap_content">
+        </EditText>
+        <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+            <Button 
+            	android:gravity="center" 
+            	android:text="Đăng nhập" 
+            	android:layout_height="wrap_content" 
+            	android:id="@+id/button2" 
+            	android:layout_width="wrap_content">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

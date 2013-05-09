@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/tittle_bar">
+        <Button 
+        	android:text="" 
+        	android:id="@+id/btnBack" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/btn_back">
+        </Button>
+    </LinearLayout>
+    <EditText 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/editText1" 
+    	android:layout_width="match_parent" 
+    	android:inputType="textMultiLine" 
+    	android:text="Điều kiện sư dụng"
+    	android:gravity="left" android:layout_weight="0.99">
+    </EditText>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.00">
+        <Button 
+        	android:text="Accept" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/btnok" 
+        	android:layout_weight="0.82" 
+        	android:layout_width="wrap_content">
+        </Button>
+        <Button 
+        	android:text="Quit" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/btncancel" 
+        	android:layout_weight="0.82" 
+        	android:layout_width="wrap_content">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

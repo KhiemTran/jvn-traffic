@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/tittle_bar">
+        <Button 
+        	android:text="" 
+        	android:id="@+id/btnBack" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/btn_back">
+        </Button>
+    </LinearLayout>
+    <LinearLayout 
+    	android:id="@+id/linearLayout1" 
+    	android:layout_width="match_parent" 
+    	android:orientation="vertical" 
+    	android:layout_height="match_parent" android:gravity="center">
+    	
+        <Button 
+        	android:text="Kích hoạt thiết bị mới" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/btnKichHoat" 
+        	android:layout_width="wrap_content" 
+        	android:width="350px"
+        	android:layout_gravity="center_horizontal" android:gravity="center">
+        </Button>
+        <Button 
+	        android:text="Đăng nhập thiết bị đã có" 
+	        android:layout_gravity="center_horizontal"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/btnDangNhap" 
+        	android:width="350px"
+	        android:layout_width="wrap_content" android:gravity="center">
+       	</Button>
+    </LinearLayout>
+</LinearLayout>
