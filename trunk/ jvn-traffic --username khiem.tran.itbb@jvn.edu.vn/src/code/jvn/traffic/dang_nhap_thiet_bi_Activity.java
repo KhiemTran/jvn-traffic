@@ -6,10 +6,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListener{
+public class dang_nhap_thiet_bi_Activity extends Activity implements OnClickListener{
 	
 	Button btnBack;
-	Button btnActive;
 	Button btnLogin;
 	
     /** Called when the activity is first created. */
@@ -21,8 +20,6 @@ public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListen
         // set onclick listener
         btnBack = (Button)findViewById(R.id.btnBack);
         btnBack.setOnClickListener(this);
-        btnActive = (Button)findViewById(R.id.btnActive);
-        btnActive.setOnClickListener(this);
         btnLogin = (Button)findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(this);
     }
@@ -34,8 +31,6 @@ public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListen
 		{
 			case R.id.btnBack:
 				onBackPressed();
-				break;
-			case R.id.btnActive:
 				break;
 			case R.id.btnLogin:
 				break;

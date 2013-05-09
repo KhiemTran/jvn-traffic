@@ -6,11 +6,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListener{
+public class kich_hoat_thiet_bi_moi_Activity extends Activity implements OnClickListener{
 	
 	Button btnBack;
 	Button btnActive;
-	Button btnLogin;
 	
     /** Called when the activity is first created. */
     @Override
@@ -23,8 +22,6 @@ public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListen
         btnBack.setOnClickListener(this);
         btnActive = (Button)findViewById(R.id.btnActive);
         btnActive.setOnClickListener(this);
-        btnLogin = (Button)findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(this);
     }
 
 	public void onClick(View arg0) {
@@ -36,8 +33,6 @@ public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListen
 				onBackPressed();
 				break;
 			case R.id.btnActive:
-				break;
-			case R.id.btnLogin:
 				break;
 		}
 	}
