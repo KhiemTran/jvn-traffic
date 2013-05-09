@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="code.jvn.traffic"
-      android:versionCode="1"
-      android:versionName="1.0">
+    package="code.jvn.traffic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
     <uses-sdk android:minSdkVersion="10" />
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-		<activity android:name=".dieu_kien_su_dung_Activity"
-                  android:label="@string/app_name">
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="code.jvn.traffic.Nhat_UsersContact"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dieu_kien_su_dung_Activity"></activity>
+        <activity android:name="code.jvn.traffic.dieu_kien_su_dung_Activity" >
+        </activity>
+        <activity android:name="code.jvn.traffic.Nhat_LoadingScreenActivity" >
+        </activity>
+        <activity
+            android:name="code.jvn.traffic.Man_hinh_cho_nguoi_dung"
+            android:label="@string/title_activity_man_hinh_cho_nguoi_dung" >
+        </activity>
+        <activity
+            android:name="code.jvn.traffic.Nhat_configApp"
+            android:label="@string/title_activity_nhat_config_app" >
+        </activity>
     </application>
+
 </manifest>
