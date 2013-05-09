@@ -21,7 +21,7 @@
                 android:id="@+id/imageButton1"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:src="@drawable/Account"
+                android:src="@drawable/account"
                 android:layout_marginLeft="10px" 
                 />
 
@@ -29,7 +29,7 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:src="@drawable/SETTING"
+                android:src="@drawable/setting"
                 />
         </LinearLayout>
 
@@ -43,13 +43,13 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:src="@drawable/SOS" 
+                android:src="@drawable/sos" 
                 android:layout_marginLeft="10px"  />
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:src="@drawable/SEARCH" 
+                android:src="@drawable/search" 
                 />
 
         </LinearLayout>
@@ -70,7 +70,7 @@
                 android:id="@+id/imageButton6"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:src="@drawable/Status" 
+                android:src="@drawable/status" 
                 />
 
         </LinearLayout>
