@@ -23,8 +23,34 @@
         </TextView>
         <EditText 
         	android:layout_height="wrap_content" 
-        	android:id="@+id/editText1" 
+        	android:id="@+id/ediPhoneNumber" 
         	android:inputType="number"
+        	android:layout_width="match_parent">
+        </EditText>
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Mã pin cũ" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/ediOldPin" 
+        	android:inputType="textPassword"
+        	android:layout_width="match_parent">
+        </EditText>
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Mã pin mới" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/TextView01">
+        </TextView>
+        <EditText 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/ediNewPin" 
+        	android:inputType="textPassword"
         	android:layout_width="match_parent">
         </EditText>
         <TextView 
@@ -36,7 +62,7 @@
         </TextView>
         <EditText 
         	android:layout_height="wrap_content" 
-        	android:id="@+id/editText1" 
+        	android:id="@+id/ediOldPassword" 
         	android:inputType="textPassword"
         	android:layout_width="match_parent">
         </EditText>
@@ -49,7 +75,7 @@
         </TextView>
         <EditText 
         	android:layout_height="wrap_content" 
-        	android:id="@+id/editText1" 
+        	android:id="@+id/ediName" 
         	android:inputType="text"
         	android:layout_width="match_parent">
         </EditText>
@@ -61,7 +87,7 @@
         	android:id="@+id/TextView01">
         </TextView>
         <EditText 
-        	android:id="@+id/editText1" 
+        	android:id="@+id/ediEmail" 
         	android:inputType="textEmailAddress" 
         	android:layout_width="match_parent" 
         	android:layout_height="wrap_content">
@@ -69,9 +95,9 @@
         <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
             <Button 
             	android:gravity="center" 
-            	android:text="Đăng nhập" 
+            	android:text="Kích hoạt" 
             	android:layout_height="wrap_content" 
-            	android:id="@+id/button2" 
+            	android:id="@+id/btnActive" 
             	android:layout_width="wrap_content">
             </Button>
         </LinearLayout>

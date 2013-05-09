@@ -13,14 +13,22 @@
         	android:background="@drawable/btn_back">
         </Button>
     </LinearLayout>
-    <EditText 
-    	android:layout_height="wrap_content" 
-    	android:id="@+id/editText1" 
+    <LinearLayout 
+    	android:id="@+id/linearLayout3" 
     	android:layout_width="match_parent" 
-    	android:inputType="textMultiLine" 
-    	android:text="Điều kiện sư dụng"
-    	android:gravity="left" android:layout_weight="0.99">
-    </EditText>
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+    	android:background="@drawable/note_background">
+        <TextView 
+        	android:layout_height="398dp" 
+        	android:text="Điều kiện sư dụng" 
+        	android:layout_weight="1" 
+        	android:layout_width="match_parent" 
+        	android:id="@+id/textView1" 
+        	android:layout_margin="10px"
+        	android:textColor="#000000">
+        </TextView>
+    </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.00">
         <Button 
         	android:text="Accept" 
