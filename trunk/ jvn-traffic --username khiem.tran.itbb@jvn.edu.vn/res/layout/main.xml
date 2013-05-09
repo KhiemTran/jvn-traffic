@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:orientation="horizontal" >
+
 	<LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -14,20 +14,23 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="100px">
 
-            <Button
-                android:id="@+id/button1"
+            <ImageButton
+                android:id="@+id/imageButton1"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
+                android:src="@drawable/Account"
+                android:layout_marginLeft="10px" 
+                />
 
-            <Button
-                android:id="@+id/button2"
+            <ImageButton
+                android:id="@+id/imageButton2"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
-
+                android:src="@drawable/SETTING"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -36,17 +39,18 @@
             android:layout_height="wrap_content" >
 
 
-            <Button
-                android:id="@+id/button3"
+            <ImageButton
+                android:id="@+id/imageButton3"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button4"
+                android:src="@drawable/SOS" 
+                android:layout_marginLeft="10px"  />
+            <ImageButton
+                android:id="@+id/imageButton4"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
+                android:src="@drawable/SEARCH" 
+                />
 
         </LinearLayout>
 
@@ -56,17 +60,18 @@
             android:layout_height="wrap_content" >
 
 
-            <Button
-                android:id="@+id/button5"
+            <ImageButton
+                android:id="@+id/imageButton5"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button6"
+                android:src="@drawable/lock" 
+                android:layout_marginLeft="10px"  />
+            <ImageButton
+                android:id="@+id/imageButton6"
                 android:layout_width="210px"
                 android:layout_height="210px"
-                android:text="Button" />
+                android:src="@drawable/Status" 
+                />
 
         </LinearLayout>
 
