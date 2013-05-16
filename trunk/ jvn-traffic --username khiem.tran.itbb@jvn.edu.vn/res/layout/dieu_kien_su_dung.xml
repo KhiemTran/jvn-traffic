@@ -26,7 +26,8 @@
         	android:layout_width="match_parent" 
         	android:id="@+id/textView1" 
         	android:layout_margin="10px"
-        	android:textColor="#000000">
+        	android:textColor="#000000"
+        	android:editable="false">
         </TextView>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.00">

@@ -1,6 +1,7 @@
 package code.jvn.traffic;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -36,8 +37,12 @@ public class quan_ly_thiet_bi_Activity extends Activity implements OnClickListen
 				onBackPressed();
 				break;
 			case R.id.btnActive:
+				Intent intent1 = new Intent(quan_ly_thiet_bi_Activity.this, kich_hoat_thiet_bi_moi_Activity.class);
+				startActivity(intent1);
 				break;
 			case R.id.btnLogin:
+				Intent intent2 = new Intent(quan_ly_thiet_bi_Activity.this, dang_nhap_thiet_bi_Activity.class);
+				startActivity(intent2);
 				break;
 		}
 	}

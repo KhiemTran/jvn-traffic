@@ -5,25 +5,37 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="10" />
-
+	<uses-permission android:name="android.permission.SEND_SMS" />	
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	
     <application
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
-        <activity
-            android:name="code.jvn.traffic.Nhat_UsersContact"
-            android:label="@string/app_name" >
-            <intent-filter>
+        <activity android:name=".dieu_kien_su_dung_Activity" >
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name="code.jvn.traffic.dieu_kien_su_dung_Activity" >
-        </activity>
-        <activity android:name="code.jvn.traffic.Nhat_LoadingScreenActivity" >
-        </activity>
-       
-       
+       	</activity>
+       	
+        <activity android:name=".quan_ly_thiet_bi_Activity" ></activity>
+        <activity android:name=".kich_hoat_thiet_bi_moi_Activity" 
+        android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".dang_nhap_thiet_bi_Activity" ></activity>
+        
+        <activity android:name=".Nhat_LoadingScreenActivity" ></activity>     
+        <activity android:name=".Nhat_UsersContact"></activity>
+        <activity android:name=".Nhat_ConfigApp"></activity>
+        
+        <activity android:name=".JVN_TrafficActivity"></activity>
+        
+        <receiver android:name=".Provider.SMS.SmsReceiver" class=".Provider.SMS.SmsReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        
     </application>
 
 </manifest>

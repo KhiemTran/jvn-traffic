@@ -30,6 +30,8 @@ public class dieu_kien_su_dung_Activity extends Activity implements OnClickListe
 		btnAccept.setOnClickListener(this);
 		btnQuit = (Button)findViewById(R.id.btncancel);
 		btnQuit.setOnClickListener(this);
+		
+		Global.appContext = getApplicationContext();
     }
 
 	public void onClick(View arg0) {
@@ -43,19 +45,15 @@ public class dieu_kien_su_dung_Activity extends Activity implements OnClickListe
 				}
 				else
 				{
-					
+					onBackPressed();
 				}
 				break;
 			case R.id.btnok:
-				if(firsttime == true)
-				{
-					Intent intent = new Intent(dieu_kien_su_dung_Activity.this, quan_ly_thiet_bi_Activity.class);
-					startActivity(intent);
-				}
-				else
-				{
-					
-				}
+				// Checking database from admin user if not have any device
+				Intent intent = new Intent(dieu_kien_su_dung_Activity.this, quan_ly_thiet_bi_Activity.class);
+				startActivity(intent);
+				
+				// have device
 				break;
 			case R.id.btncancel:
 				System.exit(0);
