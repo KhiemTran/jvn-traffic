@@ -90,6 +90,8 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     database.execSQL(DATABASE_CREATEDEVICE);
     database.execSQL(DATABASE_CREATECONFIG);
     database.execSQL(DATABASE_CREATEUSERSPHONE);
+    
+    UserDAO.insertUser("admin", "", "1234");
   }
 
   @Override
