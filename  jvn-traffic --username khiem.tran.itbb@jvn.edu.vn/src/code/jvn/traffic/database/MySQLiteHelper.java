@@ -15,6 +15,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
   
   public static final String TABLE_COMMENTSTB = "Device";
   public static final String COLUMN_IDTB = "_id";
+  public static final String COLUMN_IDUser = "_Userid";
   public static final String COLUMN_NAMETB = "name";
   public static final String COLUMN_NUMBERTB = "number";
   
@@ -53,14 +54,15 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
   private static final String DATABASE_CREATEDEVICE = "create table "
       + TABLE_COMMENTSTB + "(" + COLUMN_IDTB
-      + " integer primary key autoincrement, " + COLUMN_NAMETB
+      + " integer primary key autoincrement, " + COLUMN_IDUser
+      + " integer ," + COLUMN_NAMETB
       + " text not null ,"+COLUMN_NUMBERTB
       + " text not null);";
 
   private static final String DATABASE_CREATECONFIG = "create table "
       + TABLE_COMMENTSCF + "(" + COLUMN_IDCF
       + " integer primary key autoincrement, " + COLUMN_IDDEVICECF
-      + " text not null ,"+COLUMN_CALLCF
+      + " integer ,"+COLUMN_CALLCF
       + " text not null ,"+COLUMN_SIGNALCF
       + " text not null ,"+COLUMN_COIEF
       + " text not null ,"+COLUMN_SMSCF
@@ -71,7 +73,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
   private static final String DATABASE_CREATEUSERSPHONE = "create table "
       + TABLE_PHONEUSERS + "(" + COLUMN_IDPU
       + " integer primary key autoincrement, " + COLUMN_IDDEVICE
-      + " text not null ,"+COLUMN_NUMBER1
+      + " integer ,"+COLUMN_NUMBER1
       + " text not null ,"+COLUMN_NUMBER2
       + " text not null ,"+COLUMN_NUMBER3
       + " text not null ,"+COLUMN_NUMBER4
